@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const BIKES: Bike[] = [
   {
     id: '1',
-    name: 'E-Cargo Load 75',
+    name: 'E-Cargo',
     category: BikeCategory.CARGO,
     description: 'Le remplacement idéal de la camionnette. Jusqu\'à 100kg de charge utile, parfait pour les livraisons du dernier kilomètre en station.',
     specs: ['Moteur Bosch Cargo Line', 'Batterie 1000Wh (Dual)', 'Transmission Enviolo', 'Suspension intégrale'],
