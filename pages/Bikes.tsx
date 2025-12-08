@@ -11,7 +11,7 @@ const BIKES: Bike[] = [
     category: BikeCategory.CARGO,
     description: 'Le remplacement idéal de la camionnette. Jusqu\'à 100kg de charge utile, parfait pour les livraisons du dernier kilomètre en station.',
     specs: ['Moteur Bosch Cargo Line', 'Batterie 1000Wh (Dual)', 'Transmission Enviolo', 'Suspension intégrale'],
-    imageUrl: 'https://images.unsplash.com/photo-1519757306869-7d04f141b714?auto=format&fit=crop&q=80&w=1000'
+    imageUrl: 'https://unsplash.com/photos/a-motorcycle-parked-on-the-side-of-a-road-IhwC9VX3LoY'
   },
   {
     id: '2',
