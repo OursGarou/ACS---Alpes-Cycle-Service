@@ -110,7 +110,7 @@ const Home: React.FC = () => {
                 Basés à Bourg-Saint-Maurice, nous connaissons vos contraintes géographiques et climatiques.
               </p>
               <Link to="/entreprise">
-                <Button variant="outline" className="w-full sm:w-auto text-lg px-8 py-4 bg-slate-800 text-white border-transparent hover:bg-slate-700">
+                <Button className="w-full sm:w-auto text-lg px-8 py-4 bg-slate-800 text-white border-transparent hover:bg-slate-700">
                   En savoir plus sur ACS
                 </Button>
               </Link>
