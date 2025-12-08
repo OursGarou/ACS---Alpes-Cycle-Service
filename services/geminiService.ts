@@ -1,14 +1,16 @@
 import { GoogleGenAI } from "@google/genai";
 
-const apiKey = process.env.API_KEY || '';
-const ai = new GoogleGenAI({ apiKey });
-
 export const generateQuoteAssistance = async (userNeed: string): Promise<string> => {
+  // Initialize the client inside the function to ensure we capture the API Key 
+  // if it was set after the module loaded (e.g. via dynamic selection).
+  const apiKey = process.env.API_KEY;
+
   if (!apiKey) {
-    return "La clé API n'est pas configurée. Veuillez contacter l'administrateur.";
+    return "La clé API n'est pas configurée. Veuillez sélectionner une clé pour continuer.";
   }
 
   try {
+    const ai = new GoogleGenAI({ apiKey });
     const model = 'gemini-2.5-flash';
     const systemInstruction = `
       Tu es l'assistant virtuel expert de ACS (Alpes Cycles Services), une entreprise de mobilité pro en Haute Tarentaise.
