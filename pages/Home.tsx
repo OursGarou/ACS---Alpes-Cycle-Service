@@ -118,7 +118,7 @@ const Home: React.FC = () => {
             <div className="relative">
               <div className="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1618413156227-8141703e839e?q=80&w=1000&auto=format&fit=crop" 
+                  src="https://unsplash.com/photos/a-bunch-of-tools-hanging-on-a-wall-CL7shAl6888" 
                   alt="ACS Atelier" 
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
                 />
