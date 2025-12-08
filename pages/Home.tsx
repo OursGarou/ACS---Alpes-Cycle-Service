@@ -111,6 +111,7 @@ const Home: React.FC = () => {
               </p>
               <Link to="/entreprise">
                 <Button variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-primary">
+                <Button variant="outline" className="w-full sm:w-auto text-lg px-8 py-4 bg-slate-800 text-white border-transparent hover:bg-slate-700">
                   En savoir plus sur ACS
                 </Button>
               </Link>
