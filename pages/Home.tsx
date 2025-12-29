@@ -160,7 +160,7 @@ const Home: React.FC = () => {
                         className="w-full h-full object-cover"
                     />
                      <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-8">
-                        <p className="text-white font-medium italic">"ACS, c'est un vélo adapté à ton usage, à la montagne, toute l'année."</p>
+                        <p className="text-white font-medium italic">"ACS, c'est un vélo adapté à votre usage, à la montagne, toute l'année."</p>
                      </div>
                 </div>
             </div>
