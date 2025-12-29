@@ -155,8 +155,8 @@ const Home: React.FC = () => {
                 </div>
                 <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
                     <img 
-                        src="https://images.unsplash.com/photo-1519965099309-80e475f4305c?q=80&w=2069&auto=format&fit=crop" 
-                        alt="Vélo en conditions hivernales" 
+                        src="/image0.jpeg"
+                        alt="Vélo en conditions hivernales"
                         className="w-full h-full object-cover"
                     />
                      <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-8">
