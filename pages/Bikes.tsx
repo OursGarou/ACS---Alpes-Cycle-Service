@@ -12,7 +12,7 @@ const BIKES = [
     target: 'Pour qui ? Particuliers, Navettes staff, Administrations.',
     description: 'Oubliez le vélo de ville fragile. Ici, on parle d\'un cadre ouvert mais rigide, capable d\'avaler les côtes de Bourg-Saint-Maurice sans faiblir.',
     tech: ['Moteur Bosch Performance (75Nm)', 'Freins à disques hydrauliques 4 pistons', 'Pneus larges renforcés', 'Porte-bagages compatible MIK'],
-    imageUrl: 'https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&q=80&w=1000'
+    imageUrl: '/image0.jpeg' 
   },
   {
     id: '2',
