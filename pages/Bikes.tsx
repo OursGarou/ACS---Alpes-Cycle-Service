@@ -21,7 +21,7 @@ const BIKES = [
     target: 'Pour qui ? Loueurs, Guides, Trajets inter-stations.',
     description: 'Le SUV du vélo électrique. Suspendu, robuste et autonome, il passe de la route aux chemins carrossables sans compromis sur le confort.',
     tech: ['Moteur Bosch Performance CX (85Nm)', 'Batterie Grande Autonomie (625/750Wh)', 'Fourche suspendue 100mm', 'Éclairage puissant sur batterie'],
-    imageUrl: '/image2.jpeg' 
+    imageUrl: '/image1.jpeg' 
   },
   {
     id: '3',
