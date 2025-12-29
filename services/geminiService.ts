@@ -1,21 +1,17 @@
 import { GoogleGenAI } from "@google/genai";
 
 export const generateQuoteAssistance = async (userNeed: string): Promise<string> => {
-  // CORRECTION : Utilisation de process.env.GEMINI_API_KEY comme défini dans vite.config.ts
-  const apiKey = process.env.GEMINI_API_KEY;
+  // Récupération de la clé API configurée dans Vercel
+  const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
+
 
   if (!apiKey) {
-    console.error("API Key manquante. Vérifiez votre fichier .env.local");
-    return "La clé API n'est pas configurée. Veuillez vérifier la configuration.";
+    return "La clé API n'est pas configurée. Veuillez sélectionner une clé pour continuer.";
   }
 
   try {
     const ai = new GoogleGenAI({ apiKey });
-    
-    // CORRECTION : Utilisation du modèle "gemini-1.5-flash" (version stable actuelle)
-    // "gemini-2.5-flash" n'existe pas encore publiquement.
-    const model = "gemini-1.5-flash"; 
-    
+    const model = "gemini-2.5-flash";
     const systemInstruction = `
       Tu es l'assistant virtuel expert de ACS (Alpes Cycles Services), une entreprise de mobilité pro en Haute Tarentaise.
       Tes services :
@@ -38,9 +34,9 @@ export const generateQuoteAssistance = async (userNeed: string): Promise<string>
       },
     });
 
-    return response.text() || "Désolé, je n'ai pas pu générer de réponse.";
+    return response.text || "Désolé, je n'ai pas pu générer de réponse.";
   } catch (error) {
     console.error("Gemini API Error:", error);
-    return "Une erreur est survenue lors de la communication avec l'assistant. Veuillez réessayer plus tard.";
+    return "Une erreur est survenue lors de la communication avec l'assistant.";
   }
 }
