@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const BIKES = [
   {
     id: '1',
-    category: 'VAE Ville & Polyvalents',
+    category: 'VAE Ville & Polyvalent',
     title: 'Le Quotidien Alpin',
     target: 'Pour qui ? Particuliers, Navettes staff, Administrations.',
     description: 'Oubliez le vélo de ville fragile. Ici, on parle d\'un cadre ouvert mais rigide, capable d\'avaler les côtes de Bourg-Saint-Maurice sans faiblir.',
