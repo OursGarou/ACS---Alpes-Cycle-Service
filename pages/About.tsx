@@ -1,55 +1,93 @@
 import React from 'react';
-import { MapPin, Target, Users } from 'lucide-react';
+import { MapPin, Target, Wrench, Mountain } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
     <div className="bg-white">
+        {/* Hero Section avec l'image des Arcs */}
         <div className="relative h-[60vh] flex items-center justify-center">
              <img 
-                src='/lesarcs.jpg'
-                alt="Montagne" 
+                src="/lesarcs.jpg" 
+                alt="Les Arcs / Haute Tarentaise" 
                 className="absolute inset-0 w-full h-full object-cover"
              />
-             <div className="absolute inset-0 bg-primary/80"></div>
-             <div className="relative z-10 text-center px-4">
-                 <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">L'Entreprise</h1>
-                 <p className="text-xl text-gray-300">Ancrée en Haute Tarentaise, tournée vers l'avenir.</p>
+             <div className="absolute inset-0 bg-primary/70"></div> {/* Assombrissement pour lisibilité */}
+             <div className="relative z-10 text-center px-4 max-w-4xl">
+                 <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Notre Terrain de Jeu,<br/>C'est Votre Lieu de Travail.</h1>
+                 <p className="text-xl text-gray-200 font-medium">
+                     La mobilité professionnelle en Haute Tarentaise, repensée pour ceux qui vivent la pente au quotidien.
+                 </p>
              </div>
         </div>
 
-        <div className="max-w-4xl mx-auto px-4 py-24">
-            <div className="prose prose-lg text-gray-600 mx-auto">
-                <p className="lead text-2xl font-light text-primary mb-12">
-                    "ACS est née d'un constat simple : la montagne est un terrain de jeu exceptionnel, mais aussi un défi logistique quotidien pour les professionnels. Le vélo électrique n'est plus un loisir, c'est un outil de travail."
+        <div className="max-w-5xl mx-auto px-4 py-24">
+            
+            {/* L'Histoire / Le Constat */}
+            <div className="prose prose-lg text-gray-600 mx-auto text-center mb-20">
+                <Mountain className="h-12 w-12 text-accent mx-auto mb-6" />
+                <p className="lead text-2xl font-light text-primary italic">
+                    "La montagne est un environnement exigeant. Ce qui fonctionne en ville ne fonctionne pas forcément ici."
                 </p>
-
-                <h3 className="text-2xl font-bold text-primary mt-12 mb-6">Notre Mission</h3>
-                <p>
-                    Apporter une solution de mobilité concrète, fiable et économiquement viable aux entreprises de la vallée. Que vous soyez hôtelier à Val d'Isère, artisan à Bourg-Saint-Maurice ou restaurateur aux Arcs, nous avons conçu nos offres pour résister à l'usage intensif et au climat alpin.
-                </p>
-
-                <div className="grid md:grid-cols-2 gap-8 my-16 not-prose">
-                    <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
-                        <div className="flex items-center gap-4 mb-4">
-                            <MapPin className="text-accent h-8 w-8" />
-                            <h4 className="text-xl font-bold text-primary">Territoire</h4>
-                        </div>
-                        <p className="text-sm">Nous intervenons exclusivement en Haute Tarentaise pour garantir une réactivité maximale de notre atelier mobile.</p>
-                    </div>
-                    <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
-                        <div className="flex items-center gap-4 mb-4">
-                             <Target className="text-accent h-8 w-8" />
-                            <h4 className="text-xl font-bold text-primary">Objectif Zéro Carbone</h4>
-                        </div>
-                        <p className="text-sm">Toute notre logistique interne (livraison de vélos, déplacements techniques) est effectuée en vélo cargo électrique.</p>
-                    </div>
-                </div>
-
-                <h3 className="text-2xl font-bold text-primary mt-12 mb-6">L'Équipe</h3>
-                <p>
-                    Fondée par des passionnés de cyclisme et de mécanique, ACS combine expertise technique (certifications Bosch eBike Systems) et connaissance du tissu économique local. Nous ne sommes pas des vendeurs de vélos, nous sommes vos gestionnaires de flotte.
+                <p className="mt-8 leading-relaxed">
+                    ACS est née d'un constat simple à Bourg-Saint-Maurice : les professionnels perdent un temps précieux dans les bouchons de station ou sur des trajets courts mais pentus. 
+                    <br/><br/>
+                    Nous ne sommes pas juste des passionnés de vélo. Nous sommes des experts de la logistique alpine. 
+                    Notre mission est de fournir des outils (vélos) et des services (maintenance) capables de résister au sel, au froid et au dénivelé positif.
                 </p>
             </div>
+
+            {/* Les 3 Piliers (Valeurs) */}
+            <div className="grid md:grid-cols-3 gap-8 mb-24">
+                {/* Pilier 1 : Local */}
+                <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-shadow">
+                    <div className="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm mb-6">
+                        <MapPin className="text-accent h-7 w-7" />
+                    </div>
+                    <h4 className="text-xl font-bold text-primary mb-3">100% Local</h4>
+                    <p className="text-sm text-gray-600">
+                        Nous intervenons exclusivement en Haute Tarentaise. Pourquoi ? Pour garantir une intervention ultra-rapide de notre atelier mobile. Si vous êtes en panne aux Arcs, nous sommes là.
+                    </p>
+                </div>
+
+                {/* Pilier 2 : Expertise */}
+                <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-shadow">
+                    <div className="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm mb-6">
+                        <Wrench className="text-blue-600 h-7 w-7" />
+                    </div>
+                    <h4 className="text-xl font-bold text-primary mb-3">Technique Pointue</h4>
+                    <p className="text-sm text-gray-600">
+                        Nos vélos ne sont pas des jouets. Certifiés <strong>Bosch eBike Systems</strong> et partenaires <strong>Valeo</strong>, nous maîtrisons les motorisations complexes adaptées à la charge et à la pente.
+                    </p>
+                </div>
+
+                {/* Pilier 3 : Écologie */}
+                <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-shadow">
+                    <div className="bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm mb-6">
+                        <Target className="text-emerald-600 h-7 w-7" />
+                    </div>
+                    <h4 className="text-xl font-bold text-primary mb-3">Cohérence Totale</h4>
+                    <p className="text-sm text-gray-600">
+                        On ne se contente pas de vendre de la mobilité douce, on l'applique. Toute notre logistique interne (livraisons, déplacements atelier) est effectuée en vélo cargo. Zéro émission.
+                    </p>
+                </div>
+            </div>
+
+            {/* Le Mot de la Fin */}
+            <div className="bg-primary rounded-3xl p-12 text-center text-white relative overflow-hidden">
+                <div className="relative z-10">
+                    <h3 className="text-2xl font-bold mb-4">Envie de rejoindre le mouvement ?</h3>
+                    <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+                        Que vous soyez artisan, hôtelier ou saisonnier, nous avons une solution pour faciliter votre quotidien.
+                    </p>
+                    {/* Lien vers contact maquillé en signature/bouton */}
+                    <a href="#/contact" className="inline-block bg-white text-primary font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors">
+                        Rencontrons-nous
+                    </a>
+                </div>
+                {/* Effet déco fond */}
+                <div className="absolute top-0 right-0 w-64 h-64 bg-accent opacity-10 rounded-full blur-3xl -mr-16 -mt-16"></div>
+            </div>
+
         </div>
     </div>
   );
