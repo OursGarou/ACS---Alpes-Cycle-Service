@@ -2,7 +2,8 @@ import { GoogleGenAI } from "@google/genai";
 
 export const generateQuoteAssistance = async (userNeed: string): Promise<string> => {
   // Récupération de la clé API
-  const apiKey = import.meta.env.VITE_GOOGLE_API_KEY; // Ou process.env.GEMINI_API_KEY selon votre config
+  // Note: Assurez-vous que votre .env.local contient VITE_GOOGLE_API_KEY
+  const apiKey = import.meta.env.VITE_GOOGLE_API_KEY || process.env.GEMINI_API_KEY;
 
   if (!apiKey) {
     return "La clé API n'est pas configurée.";
