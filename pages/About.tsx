@@ -45,7 +45,7 @@ const About: React.FC = () => {
                     </div>
                     <h4 className="text-xl font-bold text-primary mb-3">100% Local</h4>
                     <p className="text-sm text-gray-600">
-                        Nous intervenons exclusivement en Haute Tarentaise. Pourquoi ? Pour garantir une intervention ultra-rapide de notre atelier mobile. Si vous êtes en panne aux Arcs, nous sommes là.
+                        Nous intervenons exclusivement en Savoie. Pourquoi ? Pour garantir une intervention ultra-rapide de notre atelier mobile. Si vous êtes en panne aux Arcs, nous sommes là.
                     </p>
                 </div>
 
