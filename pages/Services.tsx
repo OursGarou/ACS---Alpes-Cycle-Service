@@ -63,7 +63,7 @@ const Services: React.FC = () => {
                     </li>
                     <li className="flex items-center text-sm text-gray-600">
                         <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
-                        Remplacement pièces d'usure (freins, pneus)
+                        Remplacement pièces d'usure (freins, pneus, ...)
                     </li>
                  </ul>
                </div>
