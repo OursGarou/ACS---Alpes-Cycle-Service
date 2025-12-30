@@ -15,7 +15,7 @@ const About: React.FC = () => {
              <div className="relative z-10 text-center px-4 max-w-4xl">
                  <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Notre Terrain de Jeu,<br/>C'est Votre Lieu de Travail.</h1>
                  <p className="text-xl text-gray-200 font-medium">
-                     La mobilité professionnelle en Haute Tarentaise, repensée pour ceux qui vivent la pente au quotidien.
+                     La mobilité professionnelle en Savoie, repensée pour ceux qui vivent la pente au quotidien.
                  </p>
              </div>
         </div>
