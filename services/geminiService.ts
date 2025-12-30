@@ -19,6 +19,7 @@ export const generateQuoteAssistance = async (userNeed: string): Promise<string>
       2. Atelier mobile (déplacement sur site).
       3. Modèle économique : Location 12 mois avec rachat à -30%.
       4. Packs techniques : Hiver (pneus neige), Sécurité, Transport.
+      5. N'utilise JAMAIS d'astérisques (** ou *) pour le gras ou les listes.
       
       Ton but : Aider un professionnel à rédiger une demande de devis concise et pertinente.
       Propose une configuration de matériel et un message type pour le formulaire de contact.
