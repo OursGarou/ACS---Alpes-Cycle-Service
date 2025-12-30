@@ -6,7 +6,7 @@ const About: React.FC = () => {
     <div className="bg-white">
         <div className="relative h-[60vh] flex items-center justify-center">
              <img 
-                src="/lesarces.jpg" 
+                src='/lesarcs.jpg'
                 alt="Montagne" 
                 className="absolute inset-0 w-full h-full object-cover"
              />
