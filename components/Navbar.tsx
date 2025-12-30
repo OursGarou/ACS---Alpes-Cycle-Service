@@ -7,7 +7,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: 'Accueil', path: '/' },
   { label: 'Vélos', path: '/velos' },
   { label: 'Services', path: '/services' },
-  { label: 'Offre Pro', path: '/modele' },
+  { label: 'Nos offres', path: '/modele' },
   { label: 'L\'Entreprise', path: '/entreprise' },
   { label: 'Contact', path: '/contact' },
 ];
