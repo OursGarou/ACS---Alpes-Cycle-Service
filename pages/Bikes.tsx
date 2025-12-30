@@ -30,7 +30,7 @@ const BIKES = [
     target: 'Pour qui ? Commuters longue distance, Liaison vallée-station.',
     description: 'Pour ceux qui comptent en minutes. Une véritable alternative à la voiture pour les trajets domicile-travail de plus de 10km.',
     tech: ['Moteur Bosch Speed (Assistance jusqu\'à 45km/h)', 'Rétroviseur & Klaxon homologués', 'Cadre ultra-rigide', 'Immatriculation requise'],
-    imageUrl: 'https://images.unsplash.com/photo-1558981806-ec527fa84c3d?auto=format&fit=crop&q=80&w=1000'
+    imageUrl: '/image4.jpeg'
   },
   {
     id: '4',
@@ -49,7 +49,7 @@ const BIKES = [
     target: 'Pour qui ? Transport de volume, Petite logistique, Enfants en bas âge.',
     description: 'La caisse à l\'avant permet de garder un œil sur votre chargement (ou vos enfants). Centre de gravité bas pour une stabilité maximale.',
     tech: ['Moteur Bosch Cargo Line', 'Direction par câbles (rayon de braquage court)', 'Box EPP sécurisée', 'Protection pluie intégrale'],
-    imageUrl: 'https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&q=80&w=1000'
+    imageUrl: '/image2.jpeg'
   },
   {
     id: '6',
@@ -58,7 +58,7 @@ const BIKES = [
     target: 'Pour qui ? Collectivités, Propreté urbaine, Logistique dernier km.',
     description: 'Stabilité absolue à l\'arrêt comme en charge. Conçu pour remplacer les petits véhicules thermiques dans les zones piétonnes.',
     tech: ['Moteur VALEO Cyclee (Boîte auto intégrée)', 'Couple démoniaque (130Nm)', 'Charge utile XXL (+150kg)', 'Marche arrière'],
-    imageUrl: 'https://images.unsplash.com/photo-1519965099309-80e475f4305c?q=80&w=2069&auto=format&fit=crop'
+    imageUrl: '/image5.jpeg'
   },
   {
     id: '7',
