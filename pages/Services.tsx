@@ -30,6 +30,8 @@ const Services: React.FC = () => {
                  <h3 className="text-2xl font-bold text-primary mb-3">Atelier Mobile Cargo</h3>
                  <p className="text-gray-600 mb-4 leading-relaxed">
                    Plus besoin d'amener vos vélos au magasin. Notre technicien se déplace directement sur votre site avec un vélo cargo atelier tout équipé.
+                   <br/>
+                   <span className="font-medium text-primary">Intervention sur site pour limiter l’immobilisation des équipes.</span>
                  </p>
                  <ul className="space-y-2 mb-6">
                     <li className="flex items-center text-sm text-gray-600">
@@ -76,10 +78,14 @@ const Services: React.FC = () => {
                  <h3 className="text-2xl font-bold text-primary mb-3">Packs Techniques</h3>
                  <p className="text-gray-600 mb-4 leading-relaxed">
                    Adaptez votre flotte aux conditions.
+                   <br/>
+                   <span className="text-sm italic">Des packs modulables, du niveau essentiel au niveau premium, selon votre usage et vos contraintes terrain.</span>
                  </p>
                  <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
                     <h4 className="font-semibold text-primary mb-2">Pack Hiver</h4>
-                    <p className="text-sm text-gray-600">Pneus cloutés ou lamellisés, protection batterie néoprène, éclairage renforcé.</p>
+                    <p className="text-sm text-gray-600">
+                        Conçu pour un usage quotidien en conditions froides, humides et enneigées. Pneus cloutés ou lamellisés, protection batterie néoprène, éclairage renforcé.
+                    </p>
                  </div>
                </div>
              </div>
@@ -96,6 +102,9 @@ const Services: React.FC = () => {
                  </p>
                  <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
                     <p className="text-sm text-gray-600">Antivols certifiés, traceurs GPS intégrés, casques haute visibilité fournis.</p>
+                    <p className="text-xs text-gray-500 mt-3 pt-2 border-t border-gray-200 italic">
+                        Niveau de protection adaptable selon la valeur du vélo et l’usage professionnel.
+                    </p>
                  </div>
                </div>
              </div>
