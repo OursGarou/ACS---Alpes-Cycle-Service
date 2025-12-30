@@ -67,7 +67,7 @@ const BIKES = [
     target: 'Pour qui ? Tout professionnel ayant un besoin ponctuel de volume.',
     description: 'Transformez n\'importe quel vélo de la gamme en outil logistique. Des remorques freinées, sécurisées et modulables.',
     tech: ['Compatible toute gamme VUF', 'Freinage à inertie', 'Modules : Plateau, Box, Isotherme', 'Attelage sécurisé'],
-    imageUrl: 'https://images.unsplash.com/photo-1626544827763-d516dce335e2?auto=format&fit=crop&q=80&w=1000'
+    imageUrl: '/image6.jpeg'
   }
 ];
 
