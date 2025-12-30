@@ -6,7 +6,7 @@ const About: React.FC = () => {
     <div className="bg-white">
         <div className="relative h-[60vh] flex items-center justify-center">
              <img 
-                src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=2070&auto=format&fit=crop" 
+                src="/lesarces.jpg" 
                 alt="Montagne" 
                 className="absolute inset-0 w-full h-full object-cover"
              />
