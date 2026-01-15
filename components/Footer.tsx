@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-               <div className="bg-white/10 p-2 rounded-full">
+              <div className="bg-white/10 p-2 rounded-full">
                 <Bike className="h-6 w-6 text-white" />
               </div>
               <span className="font-bold text-xl">ACS</span>
@@ -52,12 +52,12 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-3 text-gray-300">
                 <Mail className="h-5 w-5 text-accent" />
-                <span>contact@acs-mobility.fr</span>
+                <span>contact@acs-alpine-cycle-studio.com</span>
               </li>
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-500">© 2024 Alpes Cycles Services. Tous droits réservés.</p>
           <div className="flex gap-4">
