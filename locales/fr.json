@@ -70,6 +70,51 @@
             "btn": "Rencontrons-nous"
         }
     },
+    "contact_page": {
+        "title": "Contactez-nous",
+        "subtitle": "Discutons de vos besoins en mobilité.",
+        "info": {
+            "title": "Nos Coordonnées",
+            "address_label": "Adresse",
+            "phone_label": "Téléphone",
+            "email_label": "Email"
+        },
+        "ai": {
+            "title": "Assistant Devis IA",
+            "desc": "Vous ne savez pas quel matériel choisir ? Décrivez votre activité (ex: \"Je suis livreur de pizza aux Arcs\"), et notre IA vous suggérera la meilleure configuration.",
+            "placeholder": "Décrivez votre besoin ici...",
+            "btn_analyze": "Obtenir une suggestion",
+            "btn_loading": "Analyse en cours...",
+            "btn_use": "Utiliser ce texte dans le formulaire →"
+        },
+        "form": {
+            "title": "Envoyer une demande",
+            "name_label": "Nom complet",
+            "name_placeholder": "Jean Dupont",
+            "company_label": "Société",
+            "company_placeholder": "Votre entreprise",
+            "email_label": "Email",
+            "email_placeholder": "jean@entreprise.com",
+            "phone_label": "Téléphone",
+            "phone_placeholder": "06 36 47 31 49",
+            "message_label": "Votre message",
+            "message_placeholder": "Détaillez votre besoin...",
+            "submit_btn": "Envoyer ma demande"
+        },
+        "prefill": {
+            "message": "Bonjour,\n\nJe souhaite obtenir un devis pour la location du vélo : {{bike}}."
+        },
+        "mailto": {
+            "subject": "Demande de contact : {{name}}",
+            "body_labels": {
+                "name": "Nom",
+                "company": "Société",
+                "email": "Email",
+                "phone": "Téléphone",
+                "message": "Message"
+            }
+        }
+    },
     "model": {
         "hero_title": "Des solutions de vélos électriques <1>adaptées à vos usages en montagne</1>",
         "hero_desc": "Location, longue durée ou saisonnière, avec accompagnement complet.",
