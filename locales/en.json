@@ -1,0 +1,22 @@
+{
+    "navbar": {
+        "home": "Home",
+        "bikes": "Bikes",
+        "services": "Services",
+        "tech_packs": "Our Offers",
+        "about": "The Company",
+        "contact": "Contact",
+        "quote": "Request a Quote"
+    },
+    "home": {
+        "subtitle": "Mountain Mobility Specialist",
+        "title": "A fleet adapted to <1>YOUR</1> needs",
+        "description": "No imposed standard models. Whether you are in a resort, in the valley, a professional or an individual, we configure the bike that exactly corresponds to your usage and your elevation."
+    },
+    "404": {
+        "title": "Oops, you derailed!",
+        "description": "It seems the chain has slipped. This page is not found or has been moved to another pass.",
+        "back": "Back to Garage",
+        "contact": "Contact Us"
+    }
+}
