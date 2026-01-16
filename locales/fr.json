@@ -1,0 +1,22 @@
+{
+    "navbar": {
+        "home": "Accueil",
+        "bikes": "Vélos",
+        "services": "Services",
+        "tech_packs": "Nos offres",
+        "about": "L'Entreprise",
+        "contact": "Contact",
+        "quote": "Demander un devis"
+    },
+    "home": {
+        "subtitle": "Spécialiste Mobilité Montagne",
+        "title": "Une flotte adaptée à <1>VOS</1> besoins",
+        "description": "Pas de modèles standards imposés. Que vous soyez en station, en vallée, professionnel ou particulier, nous configurons le vélo qui correspond exactement à votre usage et à votre dénivelé."
+    },
+    "404": {
+        "title": "Oups, vous avez déraillé !",
+        "description": "Il semblerait que la chaîne ait sauté. Cette page est introuvable ou a été déplacée vers un autre col.",
+        "back": "Retour au garage",
+        "contact": "Nous contacter"
+    }
+}
