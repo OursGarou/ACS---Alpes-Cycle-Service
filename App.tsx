@@ -8,6 +8,7 @@ import Services from './pages/Services';
 import Model from './pages/Model';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 
 // Scroll to top helper
 const ScrollToTop = () => {
@@ -32,6 +33,7 @@ const App: React.FC = () => {
             <Route path="/modele" element={<Model />} />
             <Route path="/entreprise" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
