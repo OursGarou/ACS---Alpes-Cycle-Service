@@ -45,6 +45,31 @@
             "btn": "Contact support"
         }
     },
+    "about_page": {
+        "hero_title": "Our Playground,<br/>Is Your Workplace.",
+        "hero_desc": "Professional mobility, born in the Alps to adapt everywhere.",
+        "intro_quote": "\"The mountain is a demanding environment. What works here, works everywhere.\"",
+        "intro_text": "ACS was born from a simple observation in Savoie: professionals need absolute reliability. <2>We are not just bike enthusiasts. We are logistics experts. Our mission is to provide tools (bikes) and services (maintenance) capable of withstanding the harshest conditions.</2>",
+        "pillars": {
+            "expansion": {
+                "title": "From Savoie to International",
+                "desc": "If the activity starts in Savoie, birthplace of our expertise, it extends today <strong>everywhere in France</strong> and very soon in <strong>Switzerland</strong>. We carry our alpine requirement to all new territories."
+            },
+            "expertise": {
+                "title": "Cutting-edge Technique",
+                "desc": "Our bikes are not toys. Certified <strong>Bosch eBike Systems</strong> and partners <strong>Valeo</strong>, we master complex motorizations adapted to load and slope."
+            },
+            "ecology": {
+                "title": "Total Consistency",
+                "desc": "We don't just sell soft mobility, we apply it. All our internal logistics are designed to reduce the carbon footprint, regardless of the intervention location."
+            }
+        },
+        "cta": {
+            "title": "Want to join the movement?",
+            "desc": "Whether you are in the mountains, in the city or elsewhere, we have a solution to facilitate your daily life.",
+            "btn": "Let's meet"
+        }
+    },
     "model": {
         "hero_title": "Electric bike solutions <1>adapted to your usage in the mountains</1>",
         "hero_desc": "Rental, long term or seasonal, with complete support.",
