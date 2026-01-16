@@ -8,6 +8,43 @@
         "contact": "Contact",
         "quote": "Demander un devis"
     },
+    "services": {
+        "header_title": "Services & Maintenance",
+        "header_desc": "Parce qu'un vélo professionnel ne doit jamais être immobilisé, nous avons conçu un service après-vente proactif et mobile.",
+        "cards": {
+            "workshop": {
+                "title": "Atelier Mobile Cargo",
+                "desc_1": "Plus besoin d'amener vos vélos au magasin. Notre technicien se déplace directement sur votre site avec un vélo cargo atelier tout équipé.",
+                "desc_2": "Intervention sur site pour limiter l’immobilisation des équipes.",
+                "list_1": "Intervention sous 24/48h",
+                "list_2": "Zéro émission carbone lors du déplacement"
+            },
+            "maintenance": {
+                "title": "Maintenance Préventive",
+                "desc": "Planification des révisions pour anticiper les pannes. Nous suivons le kilométrage de votre flotte et intervenons avant que l'usure ne devienne critique.",
+                "list_1": "Mises à jour logicielles Bosch",
+                "list_2": "Remplacement pièces d'usure (freins, pneus, ...)"
+            },
+            "packs": {
+                "title": "Packs Techniques",
+                "desc": "Adaptez votre flotte aux conditions.",
+                "desc_sub": "Des packs modulables, du niveau essentiel au niveau premium, selon votre usage et vos contraintes terrain.",
+                "winter_title": "Pack Hiver",
+                "winter_desc": "Conçu pour un usage quotidien en conditions froides, humides et enneigées. Pneus cloutés ou lamellisés, protection batterie néoprène, éclairage renforcé."
+            },
+            "security": {
+                "title": "Sécurité & Sérénité",
+                "desc": "Protégez votre investissement et vos collaborateurs.",
+                "text_1": "Antivols certifiés, traceurs GPS intégrés, casques haute visibilité fournis.",
+                "text_2": "Niveau de protection adaptable selon la valeur du vélo et l’usage professionnel."
+            }
+        },
+        "cta_banner": {
+            "title": "Un problème sur un vélo ?",
+            "desc": "Contactez notre support pro dédié. Intervention prioritaire garantie pour les contrats flotte.",
+            "btn": "Contacter le support"
+        }
+    },
     "home": {
         "subtitle": "Spécialiste Mobilité Montagne",
         "title": "Une flotte adaptée à <1>VOS</1> besoins",
@@ -45,6 +82,102 @@
         "about_desc_1": "ACS est né d'une conviction : la mobilité en montagne ne doit pas être une contrainte. Basés à Bourg-Saint-Maurice, nous connaissons vos routes, vos horaires et vos besoins réels.",
         "about_desc_2": "Nous ne faisons pas que livrer des vélos, nous créons des solutions pour que vous puissiez vous déplacer librement, été comme hiver.",
         "about_cta": "Qui sommes-nous ?"
+    },
+    "bikes": {
+        "header_badge": "Spécialiste Mobilité Montagne",
+        "header_title": "Une flotte adaptée à <1>VOS</1> besoins",
+        "header_desc": "Pas de modèles standards imposés. Que vous soyez en station, en vallée, professionnel ou particulier, nous configurons le vélo qui correspond exactement à votre usage et à votre dénivelé.",
+        "config_example": "Exemple de configuration :",
+        "configure_btn": "Configurer ce vélo",
+        "banner_title": "Vous ne trouvez pas exactement ce qu'il vous faut ?",
+        "banner_desc": "C'est normal, chaque métier est différent. Nous travaillons avec les meilleurs équipementiers pour adapter nos bases roulantes à vos contraintes (caisses isothermes, supports publicitaires, gyrophares...).",
+        "banner_cta": "Parler de mon projet avec un expert",
+        "items": {
+            "1": {
+                "category": "VAE Ville & Polyvalent",
+                "title": "Le Quotidien Alpin",
+                "target": "Pour qui ? Particuliers, Navettes staff, Administrations.",
+                "description": "Oubliez le vélo de ville fragile. Ici, on parle d'un cadre ouvert mais rigide, capable d'avaler les côtes de Bourg-Saint-Maurice sans faiblir.",
+                "tech": [
+                    "Moteur Bosch Performance (75Nm)",
+                    "Freins à disques hydrauliques 4 pistons",
+                    "Pneus larges renforcés",
+                    "Porte-bagages compatible MIK"
+                ]
+            },
+            "2": {
+                "category": "VAE Trekking",
+                "title": "L'Aventurier Tout-Chemin",
+                "target": "Pour qui ? Loueurs, Guides, Trajets inter-stations.",
+                "description": "Le SUV du vélo électrique. Suspendu, robuste et autonome, il passe de la route aux chemins carrossables sans compromis sur le confort.",
+                "tech": [
+                    "Moteur Bosch Performance CX (85Nm)",
+                    "Batterie Grande Autonomie (625/750Wh)",
+                    "Fourche suspendue 100mm",
+                    "Éclairage puissant sur batterie"
+                ]
+            },
+            "3": {
+                "category": "Speedbike (45 km/h)",
+                "title": "L'Alternative Voiture",
+                "target": "Pour qui ? Commuters longue distance, Liaison vallée-station.",
+                "description": "Pour ceux qui comptent en minutes. Une véritable alternative à la voiture pour les trajets domicile-travail de plus de 10km.",
+                "tech": [
+                    "Moteur Bosch Speed (Assistance jusqu'à 45km/h)",
+                    "Rétroviseur & Klaxon homologués",
+                    "Cadre ultra-rigide",
+                    "Immatriculation requise"
+                ]
+            },
+            "4": {
+                "category": "Longtail",
+                "title": "Le Station Wagon",
+                "target": "Pour qui ? Familles (2 enfants), Artisans, Livraison express.",
+                "description": "La capacité de chargement d'un cargo, l'agilité d'un vélo classique. Idéal pour déposer les enfants à l'école puis aller sur un chantier.",
+                "tech": [
+                    "Moteur Bosch Cargo Line",
+                    "Charge arrière jusqu'à 80kg",
+                    "Compatible sièges enfants & caisses Euro",
+                    "Béquille centrale double"
+                ]
+            },
+            "5": {
+                "category": "Biporteur",
+                "title": "Le Gros Porteur",
+                "target": "Pour qui ? Transport de volume, Petite logistique, Enfants en bas âge.",
+                "description": "La caisse à l'avant permet de garder un œil sur votre chargement (ou vos enfants). Centre de gravité bas pour une stabilité maximale.",
+                "tech": [
+                    "Moteur Bosch Cargo Line",
+                    "Direction par câbles (rayon de braquage court)",
+                    "Box EPP sécurisée",
+                    "Protection pluie intégrale"
+                ]
+            },
+            "6": {
+                "category": "Triporteur Pro (VUF)",
+                "title": "L'Utilitaire Lourd",
+                "target": "Pour qui ? Collectivités, Propreté urbaine, Logistique dernier km.",
+                "description": "Stabilité absolue à l'arrêt comme en charge. Conçu pour remplacer les petits véhicules thermiques dans les zones piétonnes.",
+                "tech": [
+                    "Moteur VALEO Cyclee (Boîte auto intégrée)",
+                    "Couple démoniaque (130Nm)",
+                    "Charge utile XXL (+150kg)",
+                    "Marche arrière"
+                ]
+            },
+            "7": {
+                "category": "Remorques Pro (VUF)",
+                "title": "Le Module Extension",
+                "target": "Pour qui ? Tout professionnel ayant un besoin ponctuel de volume.",
+                "description": "Transformez n'importe quel vélo de la gamme en outil logistique. Des remorques freinées, sécurisées et modulables.",
+                "tech": [
+                    "Compatible toute gamme VUF",
+                    "Freinage à inertie",
+                    "Modules : Plateau, Box, Isotherme",
+                    "Attelage sécurisé"
+                ]
+            }
+        }
     },
     "404": {
         "title": "Oups, vous avez déraillé !",
