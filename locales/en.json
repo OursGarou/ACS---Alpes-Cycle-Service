@@ -8,6 +8,43 @@
         "contact": "Contact",
         "quote": "Request a Quote"
     },
+    "services": {
+        "header_title": "Services & Maintenance",
+        "header_desc": "Because a professional bike should never be immobilized, we have designed a proactive and mobile after-sales service.",
+        "cards": {
+            "workshop": {
+                "title": "Cargo Mobile Workshop",
+                "desc_1": "No need to bring your bikes to the store. Our technician comes directly to your site with a fully equipped cargo workshop bike.",
+                "desc_2": "On-site intervention to limit team downtime.",
+                "list_1": "Intervention within 24/48h",
+                "list_2": "Zero carbon emission during travel"
+            },
+            "maintenance": {
+                "title": "Preventive Maintenance",
+                "desc": "Scheduling revisions to anticipate breakdowns. We track the mileage of your fleet and intervene before wear becomes critical.",
+                "list_1": "Bosch software updates",
+                "list_2": "Replacement of wear parts (brakes, tires, ...)"
+            },
+            "packs": {
+                "title": "Technical Packs",
+                "desc": "Adapt your fleet to conditions.",
+                "desc_sub": "Modular packs, from essential to premium level, according to your usage and terrain constraints.",
+                "winter_title": "Winter Pack",
+                "winter_desc": "Designed for daily use in cold, humid and snowy conditions. Studded or lamellized tires, neoprene battery protection, reinforced lighting."
+            },
+            "security": {
+                "title": "Security & Serenity",
+                "desc": "Protect your investment and your employees.",
+                "text_1": "Certified locks, integrated GPS trackers, high visibility helmets provided.",
+                "text_2": "Protection level adaptable according to the value of the bike and professional usage."
+            }
+        },
+        "cta_banner": {
+            "title": "A problem with a bike?",
+            "desc": "Contact our dedicated pro support. Priority intervention guaranteed for fleet contracts.",
+            "btn": "Contact support"
+        }
+    },
     "home": {
         "subtitle": "Mountain Mobility Specialist",
         "title": "A fleet adapted to <1>YOUR</1> needs",
@@ -45,6 +82,102 @@
         "about_desc_1": "ACS was born from a conviction: mobility in the mountains should not be a constraint. Based in Bourg-Saint-Maurice, we know your roads, your schedules and your real needs.",
         "about_desc_2": "We don't just deliver bikes, we create solutions so that you can move freely, summer and winter.",
         "about_cta": "Who are we?"
+    },
+    "bikes": {
+        "header_badge": "Mountain Mobility Specialist",
+        "header_title": "A fleet adapted to <1>YOUR</1> needs",
+        "header_desc": "No imposed standard models. Whether you are in a resort, in the valley, a professional or an individual, we configure the bike that exactly corresponds to your usage and your elevation.",
+        "config_example": "Configuration example:",
+        "configure_btn": "Configure this bike",
+        "banner_title": "Can't find exactly what you need?",
+        "banner_desc": "That's normal, every job is different. We work with the best equipment manufacturers to adapt our rolling bases to your constraints (insulated boxes, advertising stands, flashing lights...).",
+        "banner_cta": "Discuss my project with an expert",
+        "items": {
+            "1": {
+                "category": "City & Polyvalent E-Bike",
+                "title": "The Alpine Daily",
+                "target": "For who? Individuals, Staff shuttles, Administrations.",
+                "description": "Forget the fragile city bike. Here we are talking about an open but rigid frame, capable of swallowing the slopes of Bourg-Saint-Maurice without flinching.",
+                "tech": [
+                    "Bosch Performance Motor (75Nm)",
+                    "4-piston hydraulic disc brakes",
+                    "Reinforced wide tires",
+                    "MIK compatible luggage rack"
+                ]
+            },
+            "2": {
+                "category": "Trekking E-Bike",
+                "title": "The All-Path Adventurer",
+                "target": "For who? Rental companies, Guides, Inter-resort trips.",
+                "description": "The SUV of electric bikes. Suspended, robust and autonomous, it goes from the road to the drivable paths without compromise on comfort.",
+                "tech": [
+                    "Bosch Performance CX Motor (85Nm)",
+                    "High Range Battery (625/750Wh)",
+                    "100mm suspension fork",
+                    "Powerful battery lighting"
+                ]
+            },
+            "3": {
+                "category": "Speedbike (45 km/h)",
+                "title": "The Car Alternative",
+                "target": "For who? Long distance commuters, Valley-Resort link.",
+                "description": "For those who count in minutes. A real alternative to the car for home-work trips of more than 10km.",
+                "tech": [
+                    "Bosch Speed Motor (Assistance up to 45km/h)",
+                    "Homologated mirror & horn",
+                    "Ultra-rigid frame",
+                    "Registration required"
+                ]
+            },
+            "4": {
+                "category": "Longtail",
+                "title": "The Station Wagon",
+                "target": "For who? Families (2 children), Craftsmen, Express delivery.",
+                "description": "The loading capacity of a cargo, the agility of a classic bike. Ideal for dropping the kids at school then going to a construction site.",
+                "tech": [
+                    "Bosch Cargo Line Motor",
+                    "Rear load up to 80kg",
+                    "Compatible with child seats & Euro crates",
+                    "Double center kickstand"
+                ]
+            },
+            "5": {
+                "category": "Bi-carrier",
+                "title": "The Heavy Carrier",
+                "target": "For who? Volume transport, Small logistics, Young children.",
+                "description": "The box in the front allows you to keep an eye on your load (or your children). Low center of gravity for maximum stability.",
+                "tech": [
+                    "Bosch Cargo Line Motor",
+                    "Cable steering (short turning radius)",
+                    "Secure EPP Box",
+                    "Full rain protection"
+                ]
+            },
+            "6": {
+                "category": "Pro Tri-carrier (VUF)",
+                "title": "The Heavy Utility",
+                "target": "For who? Communities, Urban cleanliness, Last mile logistics.",
+                "description": "Absolute stability at a standstill as well as under load. Designed to replace small thermal vehicles in pedestrian zones.",
+                "tech": [
+                    "VALEO Cyclee Motor (Integrated auto gearbox)",
+                    "Demon torque (130Nm)",
+                    "XXL Payload (+150kg)",
+                    "Reverse gear"
+                ]
+            },
+            "7": {
+                "category": "Pro Trailers (VUF)",
+                "title": "The Extension Module",
+                "target": "For who? Any professional having a punctual need for volume.",
+                "description": "Transform any bike in the range into a logistics tool. Braked, secure and modular trailers.",
+                "tech": [
+                    "Compatible with all VUF range",
+                    "Inertia braking",
+                    "Modules: Tray, Box, Isotherm",
+                    "Secure hitch"
+                ]
+            }
+        }
     },
     "404": {
         "title": "Oops, you derailed!",
