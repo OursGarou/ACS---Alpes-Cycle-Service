@@ -1,20 +1,23 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Bike, Phone } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { NavItem } from '../types';
-
-const NAV_ITEMS: NavItem[] = [
-  { label: 'Accueil', path: '/' },
-  { label: 'Vélos', path: '/velos' },
-  { label: 'Services', path: '/services' },
-  { label: 'Nos offres', path: '/modele' },
-  { label: 'L\'Entreprise', path: '/entreprise' },
-  { label: 'Contact', path: '/contact' },
-];
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
+
+  const NAV_ITEMS: NavItem[] = [
+    { label: t('navbar.home'), path: '/' },
+    { label: t('navbar.bikes'), path: '/velos' },
+    { label: t('navbar.services'), path: '/services' },
+    { label: t('navbar.tech_packs'), path: '/modele' }, // Using 'tech_packs' key for 'Nos offres'
+    { label: t('navbar.about'), path: '/entreprise' },
+    { label: t('navbar.contact'), path: '/contact' },
+  ];
 
   const closeMenu = () => setIsOpen(false);
 
@@ -30,28 +33,34 @@ const Navbar: React.FC = () => {
               <span className="font-bold text-xl tracking-tight text-primary">ACS</span>
             </Link>
           </div>
-          
+
           <div className="hidden md:flex md:items-center md:space-x-8">
             {NAV_ITEMS.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium transition-colors hover:text-accent ${
-                  location.pathname === item.path ? 'text-accent' : 'text-gray-600'
-                }`}
+                className={`text-sm font-medium transition-colors hover:text-accent ${location.pathname === item.path ? 'text-accent' : 'text-gray-600'
+                  }`}
               >
                 {item.label}
               </Link>
             ))}
             <Link to="/contact">
-                <div className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-full transition-colors text-sm font-medium text-primary">
-                    <Phone size={16} />
-                    <span>Demander un devis</span>
-                </div>
+              <div className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-full transition-colors text-sm font-medium text-primary">
+                <Phone size={16} />
+                <span>{t('navbar.quote')}</span>
+              </div>
             </Link>
+
+            <div className="pl-4 border-l border-gray-200">
+              <LanguageSwitcher />
+            </div>
           </div>
 
           <div className="flex items-center md:hidden">
+            <div className="mr-4">
+              <LanguageSwitcher />
+            </div>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none"
@@ -71,11 +80,10 @@ const Navbar: React.FC = () => {
                 key={item.path}
                 to={item.path}
                 onClick={closeMenu}
-                className={`block px-3 py-4 rounded-md text-base font-medium ${
-                  location.pathname === item.path
+                className={`block px-3 py-4 rounded-md text-base font-medium ${location.pathname === item.path
                     ? 'bg-emerald-50 text-accent'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
-                }`}
+                  }`}
               >
                 {item.label}
               </Link>
