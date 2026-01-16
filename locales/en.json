@@ -70,6 +70,51 @@
             "btn": "Let's meet"
         }
     },
+    "contact_page": {
+        "title": "Contact Us",
+        "subtitle": "Let's discuss your mobility needs.",
+        "info": {
+            "title": "Contact Info",
+            "address_label": "Address",
+            "phone_label": "Phone",
+            "email_label": "Email"
+        },
+        "ai": {
+            "title": "AI Quote Assistant",
+            "desc": "Not sure which equipment to choose? Describe your activity (e.g., \"I deliver pizza in Les Arcs\"), and our AI will suggest the best configuration.",
+            "placeholder": "Describe your needs here...",
+            "btn_analyze": "Get a suggestion",
+            "btn_loading": "Analysis in progress...",
+            "btn_use": "Use this text in the form →"
+        },
+        "form": {
+            "title": "Send a request",
+            "name_label": "Full Name",
+            "name_placeholder": "John Doe",
+            "company_label": "Company",
+            "company_placeholder": "Your company",
+            "email_label": "Email",
+            "email_placeholder": "john@company.com",
+            "phone_label": "Phone",
+            "phone_placeholder": "+33 6 36 47 31 49",
+            "message_label": "Your message",
+            "message_placeholder": "Detail your needs...",
+            "submit_btn": "Send my request"
+        },
+        "prefill": {
+            "message": "Hello,\n\nI would like to get a quote for renting the bike: {{bike}}."
+        },
+        "mailto": {
+            "subject": "Contact Request: {{name}}",
+            "body_labels": {
+                "name": "Name",
+                "company": "Company",
+                "email": "Email",
+                "phone": "Phone",
+                "message": "Message"
+            }
+        }
+    },
     "model": {
         "hero_title": "Electric bike solutions <1>adapted to your usage in the mountains</1>",
         "hero_desc": "Rental, long term or seasonal, with complete support.",
