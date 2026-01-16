@@ -115,6 +115,31 @@
             }
         }
     },
+    "footer": {
+        "description": "La mobilité professionnelle durable en Haute Tarentaise. Solutions de vélos électriques, maintenance sur site et gestion de flotte.",
+        "titles": {
+            "navigation": "Navigation",
+            "services": "Services",
+            "contact": "Contact"
+        },
+        "nav": {
+            "bikes": "Nos Vélos",
+            "services": "Services Pro",
+            "model": "Offre Location/Vente",
+            "about": "L'Entreprise"
+        },
+        "services_list": {
+            "workshop": "Atelier Mobile",
+            "maintenance": "Maintenance Préventive",
+            "packs": "Packs Hiver & Sécurité",
+            "fiscal": "Étude fiscale"
+        },
+        "legal": {
+            "rights": "© 2024 Alpes Cycles Services. Tous droits réservés.",
+            "mentions": "Mentions Légales",
+            "privacy": "Politique de Confidentialité"
+        }
+    },
     "model": {
         "hero_title": "Des solutions de vélos électriques <1>adaptées à vos usages en montagne</1>",
         "hero_desc": "Location, longue durée ou saisonnière, avec accompagnement complet.",
