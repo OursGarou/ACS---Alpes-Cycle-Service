@@ -45,6 +45,76 @@
             "btn": "Contacter le support"
         }
     },
+    "model": {
+        "hero_title": "Des solutions de vélos électriques <1>adaptées à vos usages en montagne</1>",
+        "hero_desc": "Location, longue durée ou saisonnière, avec accompagnement complet.",
+        "targets": {
+            "pros": {
+                "title": "Professionnels",
+                "desc": "Entreprises, artisans, collectivités"
+            },
+            "individuals": {
+                "title": "Particuliers",
+                "desc": "Familles, trajets domicile-travail"
+            },
+            "seasonals": {
+                "title": "Saisonniers",
+                "desc": "Contrats courts, besoins ponctuels"
+            }
+        },
+        "approach": {
+            "title": "Notre Approche",
+            "step_1": {
+                "title": "1. Analyse du besoin",
+                "desc": "Nous étudions ensemble votre usage, votre terrain (dénivelé) et la durée souhaitée."
+            },
+            "step_2": {
+                "title": "2. Vélo adapté",
+                "desc": "Mise à disposition du matériel configuré spécifiquement pour la montagne."
+            },
+            "step_3": {
+                "title": "3. Suivi & Maintenance",
+                "desc": "Entretien inclus, intervention sur site et évolution de la solution si besoin."
+            }
+        },
+        "solutions": {
+            "title": "Nos Solutions",
+            "intro": "Tous nos vélos sont configurés pour un usage montagne (motorisations puissantes, freinage renforcé, fiabilité hiver).",
+            "list": {
+                "city": "VAE Ville & Trekking",
+                "speed": "Speedbike (45 km/h)",
+                "cargo": "Cargos (Biporteurs et Longtails)",
+                "trike": "Triporteurs (Motorisation Valeo)",
+                "trailers": "Remorques professionnelles (Compatibles toute gamme)"
+            }
+        },
+        "packs": {
+            "title": "Packs & Services",
+            "subtitle": "\"Les packs sont adaptables selon votre usage et votre statut.\"",
+            "technical": {
+                "title": "Packs Techniques (Hiver)",
+                "desc": "Pneus cloutés, protection thermique batterie, éclairage haute visibilité."
+            },
+            "security": {
+                "title": "Packs Sécurité",
+                "desc": "Antivols certifiés SRA, traceur GPS, marquage."
+            },
+            "serenity": {
+                "title": "Packs Sérénité",
+                "desc": "Assurance vol/casse, assistance 0km, véhicule de remplacement."
+            }
+        },
+        "fiscal": {
+            "title": "Avantages Fiscaux & Aides",
+            "desc_1": "Pour les professionnels et certains saisonniers, des avantages fiscaux et aides à la mobilité peuvent s’appliquer (Forfait Mobilités Durables, charges déductibles, dispositifs locaux).",
+            "desc_2": "Étude au cas par cas lors de la prise de contact."
+        },
+        "cta": {
+            "title": "Un besoin spécifique ?",
+            "desc": "Une contrainte terrain ou saisonnière ? Ne restez pas avec vos questions.",
+            "btn": "Demander une étude personnalisée"
+        }
+    },
     "home": {
         "subtitle": "Spécialiste Mobilité Montagne",
         "title": "Une flotte adaptée à <1>VOS</1> besoins",
