@@ -115,6 +115,31 @@
             }
         }
     },
+    "footer": {
+        "description": "Sustainable professional mobility in Haute Tarentaise. Electric bike solutions, on-site maintenance and fleet management.",
+        "titles": {
+            "navigation": "Navigation",
+            "services": "Services",
+            "contact": "Contact"
+        },
+        "nav": {
+            "bikes": "Our Bikes",
+            "services": "Pro Services",
+            "model": "Rental/Sales Offer",
+            "about": "The Company"
+        },
+        "services_list": {
+            "workshop": "Mobile Workshop",
+            "maintenance": "Preventive Maintenance",
+            "packs": "Winter & Security Packs",
+            "fiscal": "Fiscal Study"
+        },
+        "legal": {
+            "rights": "© 2024 Alpes Cycles Services. All rights reserved.",
+            "mentions": "Legal Mentions",
+            "privacy": "Privacy Policy"
+        }
+    },
     "model": {
         "hero_title": "Electric bike solutions <1>adapted to your usage in the mountains</1>",
         "hero_desc": "Rental, long term or seasonal, with complete support.",
