@@ -46,18 +46,18 @@
         }
     },
     "about_page": {
-        "hero_title": "Notre Terrain de Jeu,<br/>C'est Votre Lieu de Travail.",
+        "hero_title": "Notre Terrain de Jeu,<1/>C'est Votre Lieu de Travail.",
         "hero_desc": "La mobilité professionnelle, née dans les Alpes pour s'adapter partout.",
         "intro_quote": "\"La montagne est un environnement exigeant. Ce qui fonctionne ici, fonctionne partout.\"",
-        "intro_text": "ACS est née d'un constat simple en Savoie : les professionnels ont besoin de fiabilité absolue. <2>Nous ne sommes pas juste des passionnés de vélo. Nous sommes des experts de la logistique. Notre mission est de fournir des outils (vélos) et des services (maintenance) capables de résister aux conditions les plus rudes.</2>",
+        "intro_text": "ACS est née d'un constat simple en Savoie : les professionnels ont besoin de fiabilité absolue. <1/><2/>Nous ne sommes pas juste des passionnés de vélo. Nous sommes des experts de la logistique. Notre mission est de fournir des outils (vélos) et des services (maintenance) capables de résister aux conditions les plus rudes.",
         "pillars": {
             "expansion": {
                 "title": "De la Savoie à l'International",
-                "desc": "Si l'activité commence en Savoie, berceau de notre expertise, elle s'étend aujourd'hui <strong>partout en France</strong> et très prochainement en <strong>Suisse</strong>. Nous portons notre exigence alpine sur tous les nouveaux territoires."
+                "desc": "Si l'activité commence en Savoie, berceau de notre expertise, elle s'étend aujourd'hui <1>partout en France</1> et très prochainement en <3>Suisse</3>. Nous portons notre exigence alpine sur tous les nouveaux territoires."
             },
             "expertise": {
                 "title": "Technique Pointue",
-                "desc": "Nos vélos ne sont pas des jouets. Certifiés <strong>Bosch eBike Systems</strong> et partenaires <strong>Valeo</strong>, nous maîtrisons les motorisations complexes adaptées à la charge et à la pente."
+                "desc": "Nos vélos ne sont pas des jouets. Certifiés <1>Bosch eBike Systems</1> et partenaires <3>Valeo</3>, nous maîtrisons les motorisations complexes adaptées à la charge et à la pente."
             },
             "ecology": {
                 "title": "Cohérence Totale",
@@ -141,7 +141,7 @@
         }
     },
     "model": {
-        "hero_title": "Des solutions de vélos électriques <1>adaptées à vos usages en montagne</1>",
+        "hero_title": "Des solutions de vélos électriques <1/><2>adaptées à vos usages en montagne</2>",
         "hero_desc": "Location, longue durée ou saisonnière, avec accompagnement complet.",
         "targets": {
             "pros": {
