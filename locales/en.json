@@ -46,18 +46,18 @@
         }
     },
     "about_page": {
-        "hero_title": "Our Playground,<br/>Is Your Workplace.",
+        "hero_title": "Our Playground,<1/>Is Your Workplace.",
         "hero_desc": "Professional mobility, born in the Alps to adapt everywhere.",
         "intro_quote": "\"The mountain is a demanding environment. What works here, works everywhere.\"",
-        "intro_text": "ACS was born from a simple observation in Savoie: professionals need absolute reliability. <2>We are not just bike enthusiasts. We are logistics experts. Our mission is to provide tools (bikes) and services (maintenance) capable of withstanding the harshest conditions.</2>",
+        "intro_text": "ACS was born from a simple observation in Savoie: professionals need absolute reliability. <1/><2/>We are not just bike enthusiasts. We are logistics experts. Our mission is to provide tools (bikes) and services (maintenance) capable of withstandering the harshest conditions.",
         "pillars": {
             "expansion": {
                 "title": "From Savoie to International",
-                "desc": "If the activity starts in Savoie, birthplace of our expertise, it extends today <strong>everywhere in France</strong> and very soon in <strong>Switzerland</strong>. We carry our alpine requirement to all new territories."
+                "desc": "If the activity starts in Savoie, birthplace of our expertise, it extends today <1>everywhere in France</1> and very soon in <3>Switzerland</3>. We carry our alpine requirement to all new territories."
             },
             "expertise": {
                 "title": "Cutting-edge Technique",
-                "desc": "Our bikes are not toys. Certified <strong>Bosch eBike Systems</strong> and partners <strong>Valeo</strong>, we master complex motorizations adapted to load and slope."
+                "desc": "Our bikes are not toys. Certified <1>Bosch eBike Systems</1> and partners <3>Valeo</3>, we master complex motorizations adapted to load and slope."
             },
             "ecology": {
                 "title": "Total Consistency",
@@ -141,7 +141,7 @@
         }
     },
     "model": {
-        "hero_title": "Electric bike solutions <1>adapted to your usage in the mountains</1>",
+        "hero_title": "Electric bike solutions <1/><2>adapted to your usage in the mountains</2>",
         "hero_desc": "Rental, long term or seasonal, with complete support.",
         "targets": {
             "pros": {
