@@ -45,6 +45,76 @@
             "btn": "Contact support"
         }
     },
+    "model": {
+        "hero_title": "Electric bike solutions <1>adapted to your usage in the mountains</1>",
+        "hero_desc": "Rental, long term or seasonal, with complete support.",
+        "targets": {
+            "pros": {
+                "title": "Professionnels",
+                "desc": "Companies, craftsmen, communities"
+            },
+            "individuals": {
+                "title": "Individuals",
+                "desc": "Families, home-work commute"
+            },
+            "seasonals": {
+                "title": "Seasonals",
+                "desc": "Short contracts, punctual needs"
+            }
+        },
+        "approach": {
+            "title": "Our Approach",
+            "step_1": {
+                "title": "1. Need analysis",
+                "desc": "We study together your usage, your terrain (elevation) and the desired duration."
+            },
+            "step_2": {
+                "title": "2. Adapted bike",
+                "desc": "Provision of equipment configured specifically for the mountains."
+            },
+            "step_3": {
+                "title": "3. Monitoring & Maintenance",
+                "desc": "Maintenance included, intervention on site and evolution of the solution if needed."
+            }
+        },
+        "solutions": {
+            "title": "Our Solutions",
+            "intro": "All our bikes are configured for mountain usage (powerful motors, reinforced braking, winter reliability).",
+            "list": {
+                "city": "City & Trekking E-Bike",
+                "speed": "Speedbike (45 km/h)",
+                "cargo": "Cargos (Bi-carriers and Longtails)",
+                "trike": "Tri-carriers (Valeo Motorization)",
+                "trailers": "Professional trailers (Compatible entire range)"
+            }
+        },
+        "packs": {
+            "title": "Packs & Services",
+            "subtitle": "\"The packs are adaptable according to your usage and your status.\"",
+            "technical": {
+                "title": "Technical Packs (Winter)",
+                "desc": "Studded tires, thermal battery protection, high visibility lighting."
+            },
+            "security": {
+                "title": "Security Packs",
+                "desc": "SRA certified locks, GPS tracker, marking."
+            },
+            "serenity": {
+                "title": "Serenity Packs",
+                "desc": "Theft/breakage insurance, 0km assistance, replacement vehicle."
+            }
+        },
+        "fiscal": {
+            "title": "Fiscal Advantages & Aids",
+            "desc_1": "For professionals and some seasonals, fiscal advantages and mobility aids may apply (Sustainable Mobility Package, deductible charges, local schemes).",
+            "desc_2": "Case by case study during contact."
+        },
+        "cta": {
+            "title": "A specific need?",
+            "desc": "A terrain or seasonal constraint? Do not stay with your questions.",
+            "btn": "Request a personalized study"
+        }
+    },
     "home": {
         "subtitle": "Mountain Mobility Specialist",
         "title": "A fleet adapted to <1>YOUR</1> needs",
