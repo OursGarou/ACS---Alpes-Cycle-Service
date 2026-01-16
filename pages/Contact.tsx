@@ -16,8 +16,10 @@ const Contact: React.FC = () => {
 
     useEffect(() => {
         if (location.state?.bike) {
-            setAiPrompt(`Je suis intéressé par le vélo : ${location.state.bike}. Pouvez-vous m'aider à compléter ma demande ?`);
-            // Optional: Scroll to AI section if needed
+            setFormData(prev => ({
+                ...prev,
+                message: `Bonjour,\n\nJe souhaite obtenir un devis pour la location du vélo : ${location.state.bike}.`
+            }));
         }
     }, [location.state]);
 
