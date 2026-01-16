@@ -12,7 +12,7 @@ const BIKES = [
     target: 'Pour qui ? Particuliers, Navettes staff, Administrations.',
     description: 'Oubliez le vélo de ville fragile. Ici, on parle d\'un cadre ouvert mais rigide, capable d\'avaler les côtes de Bourg-Saint-Maurice sans faiblir.',
     tech: ['Moteur Bosch Performance (75Nm)', 'Freins à disques hydrauliques 4 pistons', 'Pneus larges renforcés', 'Porte-bagages compatible MIK'],
-    imageUrl: '/image3.jpg' 
+    imageUrl: '/image3.jpg'
   },
   {
     id: '2',
@@ -21,7 +21,7 @@ const BIKES = [
     target: 'Pour qui ? Loueurs, Guides, Trajets inter-stations.',
     description: 'Le SUV du vélo électrique. Suspendu, robuste et autonome, il passe de la route aux chemins carrossables sans compromis sur le confort.',
     tech: ['Moteur Bosch Performance CX (85Nm)', 'Batterie Grande Autonomie (625/750Wh)', 'Fourche suspendue 100mm', 'Éclairage puissant sur batterie'],
-    imageUrl: '/image1.jpeg' 
+    imageUrl: '/image1.jpeg'
   },
   {
     id: '3',
@@ -40,7 +40,7 @@ const BIKES = [
     description: 'La capacité de chargement d\'un cargo, l\'agilité d\'un vélo classique. Idéal pour déposer les enfants à l\'école puis aller sur un chantier.',
     tech: ['Moteur Bosch Cargo Line', 'Charge arrière jusqu\'à 80kg', 'Compatible sièges enfants & caisses Euro', 'Béquille centrale double'],
     // Note: Utilisation de votre image locale
-    imageUrl: '/image0.jpeg' 
+    imageUrl: '/image0.jpeg'
   },
   {
     id: '5',
@@ -75,7 +75,7 @@ const Bikes: React.FC = () => {
   return (
     <div className="bg-gray-50 min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* En-tête de page */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 bg-emerald-100 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -86,7 +86,7 @@ const Bikes: React.FC = () => {
             Une flotte adaptée à <span className="text-accent">VOS</span> besoins
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Pas de modèles standards imposés. Que vous soyez en station, en vallée, professionnel ou particulier, 
+            Pas de modèles standards imposés. Que vous soyez en station, en vallée, professionnel ou particulier,
             nous configurons le vélo qui correspond exactement à votre usage et à votre dénivelé.
           </p>
         </div>
@@ -95,21 +95,21 @@ const Bikes: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {BIKES.map((bike) => (
             <div key={bike.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col group">
-              
+
               {/* Image Container */}
               <div className="h-64 overflow-hidden relative">
                 <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide z-10 shadow-lg">
                   {bike.category}
                 </div>
                 {bike.tech.some(t => t.includes('45km/h')) && (
-                   <div className="absolute top-4 right-4 bg-orange-500 text-white px-2 py-1 rounded-md z-10 shadow-lg">
-                     <Gauge className="w-4 h-4" />
-                   </div>
+                  <div className="absolute top-4 right-4 bg-orange-500 text-white px-2 py-1 rounded-md z-10 shadow-lg">
+                    <Gauge className="w-4 h-4" />
+                  </div>
                 )}
-                <img 
-                    src={bike.imageUrl} 
-                    alt={bike.title} 
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" 
+                <img
+                  src={bike.imageUrl}
+                  alt={bike.title}
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
 
@@ -122,7 +122,7 @@ const Bikes: React.FC = () => {
                 <p className="text-gray-600 mb-6 text-sm leading-relaxed flex-1 border-b border-gray-100 pb-6">
                   {bike.description}
                 </p>
-                
+
                 <div className="mb-8">
                   <h4 className="text-sm font-bold text-primary mb-3 flex items-center gap-2">
                     <Zap className="w-4 h-4 text-yellow-500" /> Exemple de configuration :
@@ -137,32 +137,32 @@ const Bikes: React.FC = () => {
                   </ul>
                 </div>
 
-                <Link to="/contact" className="mt-auto">
-                    <Button variant="outline" fullWidth className="group-hover:bg-primary group-hover:text-white group-hover:border-transparent transition-all">
-                      Configurer ce vélo
-                    </Button>
+                <Link to="/contact" state={{ bike: bike.title }} className="mt-auto">
+                  <Button variant="outline" fullWidth className="group-hover:bg-primary group-hover:text-white group-hover:border-transparent transition-all">
+                    Configurer ce vélo
+                  </Button>
                 </Link>
               </div>
             </div>
           ))}
         </div>
-        
+
         {/* Bottom Banner */}
         <div className="mt-24 bg-primary rounded-3xl p-10 md:p-16 text-center text-white relative overflow-hidden">
-             <div className="absolute top-0 right-0 w-64 h-64 bg-accent opacity-20 rounded-full blur-3xl -mr-16 -mt-16"></div>
-             <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-600 opacity-20 rounded-full blur-3xl -ml-16 -mb-16"></div>
-             
-             <div className="relative z-10">
-                 <h2 className="text-3xl font-bold mb-6">Vous ne trouvez pas exactement ce qu'il vous faut ?</h2>
-                 <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
-                     C'est normal, chaque métier est différent. Nous travaillons avec les meilleurs équipementiers pour adapter nos bases roulantes à vos contraintes (caisses isothermes, supports publicitaires, gyrophares...).
-                 </p>
-                 <Link to="/contact">
-                    <Button variant="primary" className="bg-accent hover:bg-emerald-600 border-none text-lg px-8 py-4">
-                        Parler de mon projet avec un expert
-                    </Button>
-                 </Link>
-             </div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent opacity-20 rounded-full blur-3xl -mr-16 -mt-16"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-600 opacity-20 rounded-full blur-3xl -ml-16 -mb-16"></div>
+
+          <div className="relative z-10">
+            <h2 className="text-3xl font-bold mb-6">Vous ne trouvez pas exactement ce qu'il vous faut ?</h2>
+            <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+              C'est normal, chaque métier est différent. Nous travaillons avec les meilleurs équipementiers pour adapter nos bases roulantes à vos contraintes (caisses isothermes, supports publicitaires, gyrophares...).
+            </p>
+            <Link to="/contact">
+              <Button variant="primary" className="bg-accent hover:bg-emerald-600 border-none text-lg px-8 py-4">
+                Parler de mon projet avec un expert
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
