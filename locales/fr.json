@@ -45,6 +45,31 @@
             "btn": "Contacter le support"
         }
     },
+    "about_page": {
+        "hero_title": "Notre Terrain de Jeu,<br/>C'est Votre Lieu de Travail.",
+        "hero_desc": "La mobilité professionnelle, née dans les Alpes pour s'adapter partout.",
+        "intro_quote": "\"La montagne est un environnement exigeant. Ce qui fonctionne ici, fonctionne partout.\"",
+        "intro_text": "ACS est née d'un constat simple en Savoie : les professionnels ont besoin de fiabilité absolue. <2>Nous ne sommes pas juste des passionnés de vélo. Nous sommes des experts de la logistique. Notre mission est de fournir des outils (vélos) et des services (maintenance) capables de résister aux conditions les plus rudes.</2>",
+        "pillars": {
+            "expansion": {
+                "title": "De la Savoie à l'International",
+                "desc": "Si l'activité commence en Savoie, berceau de notre expertise, elle s'étend aujourd'hui <strong>partout en France</strong> et très prochainement en <strong>Suisse</strong>. Nous portons notre exigence alpine sur tous les nouveaux territoires."
+            },
+            "expertise": {
+                "title": "Technique Pointue",
+                "desc": "Nos vélos ne sont pas des jouets. Certifiés <strong>Bosch eBike Systems</strong> et partenaires <strong>Valeo</strong>, nous maîtrisons les motorisations complexes adaptées à la charge et à la pente."
+            },
+            "ecology": {
+                "title": "Cohérence Totale",
+                "desc": "On ne se contente pas de vendre de la mobilité douce, on l'applique. Toute notre logistique interne est pensée pour réduire l'empreinte carbone, peu importe le lieu d'intervention."
+            }
+        },
+        "cta": {
+            "title": "Envie de rejoindre le mouvement ?",
+            "desc": "Que vous soyez en montagne, en ville ou ailleurs, nous avons une solution pour faciliter votre quotidien.",
+            "btn": "Rencontrons-nous"
+        }
+    },
     "model": {
         "hero_title": "Des solutions de vélos électriques <1>adaptées à vos usages en montagne</1>",
         "hero_desc": "Location, longue durée ou saisonnière, avec accompagnement complet.",
