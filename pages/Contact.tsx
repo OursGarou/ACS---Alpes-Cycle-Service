@@ -3,8 +3,10 @@ import { Mail, Phone, MapPin, Sparkles } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 import Button from '../components/Button';
 import { generateQuoteAssistance } from '../services/geminiService';
+import { useTranslation } from 'react-i18next';
 
 const Contact: React.FC = () => {
+    const { t } = useTranslation();
     const location = useLocation();
     const [formData, setFormData] = useState({
         name: '',
@@ -18,10 +20,10 @@ const Contact: React.FC = () => {
         if (location.state?.bike) {
             setFormData(prev => ({
                 ...prev,
-                message: `Bonjour,\n\nJe souhaite obtenir un devis pour la location du vélo : ${location.state.bike}.`
+                message: t('contact_page.prefill.message', { bike: location.state.bike })
             }));
         }
-    }, [location.state]);
+    }, [location.state, t]);
 
     // AI Assistant States
     const [aiPrompt, setAiPrompt] = useState('');
@@ -35,19 +37,16 @@ const Contact: React.FC = () => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         // Construct mailto link
-        const subject = `Demande de contact : ${formData.company || formData.name}`;
-        const body = `Nom: ${formData.name}
-Société: ${formData.company}
-Email: ${formData.email}
-Téléphone: ${formData.phone}
+        const subject = t('contact_page.mailto.subject', { name: formData.company || formData.name });
+        const body = `${t('contact_page.mailto.body_labels.name')}: ${formData.name}
+${t('contact_page.mailto.body_labels.company')}: ${formData.company}
+${t('contact_page.mailto.body_labels.email')}: ${formData.email}
+${t('contact_page.mailto.body_labels.phone')}: ${formData.phone}
 
-Message:
+${t('contact_page.mailto.body_labels.message')}:
 ${formData.message}`;
 
         window.location.href = `mailto:contact@acs-alpine-cycle-studio.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-        // Optional: Reset form or show success message after a brief delay
-        // setFormData({ name: '', company: '', email: '', phone: '', message: '' });
     };
 
     const handleAiAssist = async () => {
@@ -62,7 +61,6 @@ ${formData.message}`;
     };
 
     const applyAiSuggestion = () => {
-        // Extract the message part roughly or just append to message
         setFormData(prev => ({
             ...prev,
             message: aiResponse
@@ -76,8 +74,8 @@ ${formData.message}`;
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl font-bold text-primary mb-4">Contactez-nous</h1>
-                    <p className="text-xl text-gray-600">Discutons de vos besoins en mobilité.</p>
+                    <h1 className="text-4xl font-bold text-primary mb-4">{t('contact_page.title')}</h1>
+                    <p className="text-xl text-gray-600">{t('contact_page.subtitle')}</p>
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -85,26 +83,26 @@ ${formData.message}`;
                     {/* Contact Info */}
                     <div className="space-y-8">
                         <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                            <h3 className="text-2xl font-bold text-primary mb-6">Nos Coordonnées</h3>
+                            <h3 className="text-2xl font-bold text-primary mb-6">{t('contact_page.info.title')}</h3>
                             <div className="space-y-6">
                                 <div className="flex items-start gap-4">
                                     <MapPin className="h-6 w-6 text-accent mt-1" />
                                     <div>
-                                        <p className="font-semibold text-gray-900">Adresse</p>
+                                        <p className="font-semibold text-gray-900">{t('contact_page.info.address_label')}</p>
                                         <p className="text-gray-600">123 Avenue de la Gare<br />73700 Bourg-Saint-Maurice</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-4">
                                     <Phone className="h-6 w-6 text-accent mt-1" />
                                     <div>
-                                        <p className="font-semibold text-gray-900">Téléphone</p>
+                                        <p className="font-semibold text-gray-900">{t('contact_page.info.phone_label')}</p>
                                         <p className="text-gray-600">06 36 47 31 49</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-4">
                                     <Mail className="h-6 w-6 text-accent mt-1" />
                                     <div>
-                                        <p className="font-semibold text-gray-900">Email</p>
+                                        <p className="font-semibold text-gray-900">{t('contact_page.info.email_label')}</p>
                                         <p className="text-gray-600">contact@acs-alpine-cycle-studio.com</p>
                                     </div>
                                 </div>
@@ -115,17 +113,17 @@ ${formData.message}`;
                         <div className="bg-gradient-to-br from-primary to-slate-800 p-8 rounded-2xl shadow-lg text-white">
                             <div className="flex items-center gap-3 mb-4">
                                 <Sparkles className="text-yellow-400 h-6 w-6" />
-                                <h3 className="text-xl font-bold">Assistant Devis IA</h3>
+                                <h3 className="text-xl font-bold">{t('contact_page.ai.title')}</h3>
                             </div>
                             <p className="text-gray-300 text-sm mb-6">
-                                Vous ne savez pas quel matériel choisir ? Décrivez votre activité (ex: "Je suis livreur de pizza aux Arcs"), et notre IA vous suggérera la meilleure configuration.
+                                {t('contact_page.ai.desc')}
                             </p>
 
                             <div className="space-y-4">
                                 <textarea
                                     value={aiPrompt}
                                     onChange={(e) => setAiPrompt(e.target.value)}
-                                    placeholder="Décrivez votre besoin ici..."
+                                    placeholder={t('contact_page.ai.placeholder')}
                                     className="w-full p-3 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent text-sm h-24"
                                 />
                                 <Button
@@ -135,7 +133,7 @@ ${formData.message}`;
                                     className="bg-accent hover:bg-emerald-600 border-none"
                                     disabled={aiLoading}
                                 >
-                                    {aiLoading ? 'Analyse en cours...' : 'Obtenir une suggestion'}
+                                    {aiLoading ? t('contact_page.ai.btn_loading') : t('contact_page.ai.btn_analyze')}
                                 </Button>
                             </div>
 
@@ -148,7 +146,7 @@ ${formData.message}`;
                                         onClick={applyAiSuggestion}
                                         className="text-xs font-bold uppercase tracking-wide text-accent hover:text-white transition-colors"
                                     >
-                                        Utiliser ce texte dans le formulaire →
+                                        {t('contact_page.ai.btn_use')}
                                     </button>
                                 </div>
                             )}
@@ -157,11 +155,11 @@ ${formData.message}`;
 
                     {/* Form */}
                     <div className="bg-white p-8 md:p-10 rounded-2xl shadow-lg border border-gray-100">
-                        <h3 className="text-2xl font-bold text-primary mb-8">Envoyer une demande</h3>
+                        <h3 className="text-2xl font-bold text-primary mb-8">{t('contact_page.form.title')}</h3>
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div>
-                                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Nom complet</label>
+                                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">{t('contact_page.form.name_label')}</label>
                                     <input
                                         type="text"
                                         id="name"
@@ -169,12 +167,12 @@ ${formData.message}`;
                                         value={formData.name}
                                         onChange={handleChange}
                                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent focus:border-transparent transition-all outline-none"
-                                        placeholder="Jean Dupont"
+                                        placeholder={t('contact_page.form.name_placeholder')}
                                         required
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">Société</label>
+                                    <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">{t('contact_page.form.company_label')}</label>
                                     <input
                                         type="text"
                                         id="company"
@@ -182,14 +180,14 @@ ${formData.message}`;
                                         value={formData.company}
                                         onChange={handleChange}
                                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent focus:border-transparent transition-all outline-none"
-                                        placeholder="Votre entreprise"
+                                        placeholder={t('contact_page.form.company_placeholder')}
                                     />
                                 </div>
                             </div>
 
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div>
-                                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">{t('contact_page.form.email_label')}</label>
                                     <input
                                         type="email"
                                         id="email"
@@ -197,12 +195,12 @@ ${formData.message}`;
                                         value={formData.email}
                                         onChange={handleChange}
                                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent focus:border-transparent transition-all outline-none"
-                                        placeholder="jean@entreprise.com"
+                                        placeholder={t('contact_page.form.email_placeholder')}
                                         required
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">Téléphone</label>
+                                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">{t('contact_page.form.phone_label')}</label>
                                     <input
                                         type="tel"
                                         id="phone"
@@ -210,13 +208,13 @@ ${formData.message}`;
                                         value={formData.phone}
                                         onChange={handleChange}
                                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent focus:border-transparent transition-all outline-none"
-                                        placeholder="06 36 47 31 49"
+                                        placeholder={t('contact_page.form.phone_placeholder')}
                                     />
                                 </div>
                             </div>
 
                             <div>
-                                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Votre message</label>
+                                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">{t('contact_page.form.message_label')}</label>
                                 <textarea
                                     id="message"
                                     name="message"
@@ -224,13 +222,13 @@ ${formData.message}`;
                                     onChange={handleChange}
                                     rows={6}
                                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent focus:border-transparent transition-all outline-none"
-                                    placeholder="Détaillez votre besoin..."
+                                    placeholder={t('contact_page.form.message_placeholder')}
                                     required
                                 ></textarea>
                             </div>
 
                             <Button type="submit" fullWidth className="text-lg">
-                                Envoyer ma demande
+                                {t('contact_page.form.submit_btn')}
                             </Button>
                         </form>
                     </div>
