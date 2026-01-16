@@ -137,7 +137,7 @@ const Bikes: React.FC = () => {
                   </ul>
                 </div>
 
-                <Link to="/contact" state={{ bike: bike.title }} className="mt-auto">
+                <Link to="/contact" state={{ bike: `${bike.category} (${bike.title})` }} className="mt-auto">
                   <Button variant="outline" fullWidth className="group-hover:bg-primary group-hover:text-white group-hover:border-transparent transition-all">
                     Configurer ce vélo
                   </Button>
