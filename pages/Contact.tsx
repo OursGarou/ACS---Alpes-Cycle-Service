@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Sparkles } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 import Button from '../components/Button';
 import { generateQuoteAssistance } from '../services/geminiService';
 
 const Contact: React.FC = () => {
+    const location = useLocation();
     const [formData, setFormData] = useState({
         name: '',
         company: '',
@@ -11,6 +13,15 @@ const Contact: React.FC = () => {
         phone: '',
         message: ''
     });
+
+    useEffect(() => {
+        if (location.state?.bike) {
+            setFormData(prev => ({
+                ...prev,
+                message: `Bonjour,\n\nJe souhaite obtenir un devis pour la location du vélo : ${location.state.bike}.\n\nMerci.`
+            }));
+        }
+    }, [location.state]);
 
     // AI Assistant States
     const [aiPrompt, setAiPrompt] = useState('');
